@@ -1,1 +1,1 @@
-Demo for the package [flash-messages](https://github.com/camilosw/flash-messages)
+[Demo](http://flash-messages-demo.meteor.com/) for the package [flash-messages](https://github.com/camilosw/flash-messages)

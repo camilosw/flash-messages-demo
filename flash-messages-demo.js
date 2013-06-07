@@ -14,7 +14,7 @@ if (Meteor.isClient) {
     },
     'click a.show-error' : function (e, tmpl) {
       e.preventDefault();
-      Meteor.Messages.sendError("<strong>Stop!</strong> your doing something wrong with your life.");
+      Meteor.Messages.sendError("Stop! your doing something wrong with your life.");
     },
     'click a.show-success' : function (e, tmpl) {
       e.preventDefault();
