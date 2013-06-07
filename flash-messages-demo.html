@@ -1,0 +1,58 @@
+<head>
+  <title>flash-messages-demo</title>
+</head>
+
+<body>
+  <div class="container">
+    {{> header}}
+
+        {{> meteorMessages}}
+        {{> main}}
+  </div>
+</body>
+
+<template name="header">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Title</a>
+      <ul class="nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<template name="main">
+  <div class="well">
+    <a href="#" class="btn btn-primary show-message">Click me!</a>
+    <a href="#" class="btn btn-primary clear-messages">Clear messages</a>
+  </div>
+  <div class="well">
+    <a href="#" class="btn btn-warning show-alert">Alert</a>
+    <a href="#" class="btn btn-danger show-error">Error</a>
+    <a href="#" class="btn btn-success show-success">Success</a>
+    <a href="#" class="btn btn-info show-info">Info</a>
+  </div>
+  <div class="well"><h3>Scroll down</h3></div>
+  <div class="well"><h4>more...</h4></div>
+  <div class="well"><h5>more...</h5></div>
+  <div class="well"><h6>more...</h6></div>
+  <div class="well"><small>more...</small></div>
+  <div class="well"><small>more...</small></div>
+  <div class="well"><small>more...</small></div>
+  <div class="well"><small>more...</small></div>
+  <div class="well"><small>more...</small></div>
+  <div class="well"><small>more...</small></div>
+  <div class="well"><small>more...</small></div>
+  <div class="hero-unit">
+    <h1>Stop!!!</h1>
+    <p>And click the button</p>
+    <p>
+      <a class="btn btn-primary show-message-scroll">
+        The button
+      </a>
+    </p>
+  </div>
+</template>
