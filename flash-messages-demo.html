@@ -6,22 +6,24 @@
   <div class="container">
     {{> header}}
 
-        {{> meteorMessages}}
+        {{> flashMessages}}
         {{> main}}
   </div>
 </body>
 
 <template name="header">
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="#">Title</a>
-      <ul class="nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Link</a></li>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
       </ul>
     </div>
-  </div>
+  </nav>
 </template>
 
 <template name="main">
@@ -46,7 +48,7 @@
   <div class="well"><small>more...</small></div>
   <div class="well"><small>more...</small></div>
   <div class="well"><small>more...</small></div>
-  <div class="hero-unit">
+  <div class="jumbotron">
     <h1>Stop!!!</h1>
     <p>And click the button</p>
     <p>
