@@ -4,6 +4,14 @@ if (Meteor.isClient) {
       e.preventDefault();
       FlashMessages.sendInfo("I'm a message.");
     },
+    'click a.autohide-off' : function (e, tmpl) {
+      e.preventDefault();
+      FlashMessages.sendInfo("I'll be here all the time you want.", { autoHide: false });
+    },
+    'click a.delay-changed' : function (e, tmpl) {
+      e.preventDefault();
+      FlashMessages.sendInfo("I'm a fast message!!!", { hideDelay: 1000 });
+    },
     'click a.clear-messages' : function (e, tmpl) {
       e.preventDefault();
       FlashMessages.clear();

@@ -1,5 +1,8 @@
 {
   "packages": {
-    "flash-messages": {}
+    "flash-messages": {
+      "git": "https://github.com/camilosw/flash-messages.git",
+      "branch": "develop"
+    }
   }
 }
