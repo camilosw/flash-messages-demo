@@ -5,9 +5,10 @@
 <body>
   <div class="container">
     {{> header}}
-
-        {{> flashMessages}}
-        {{> main}}
+      {{> flashMessages}}
+      <h4> below here is the 'named' flash message</h4>
+      {{> flashMessages myFlashIdHelper}}
+    {{> main}}
   </div>
 </body>
 
@@ -39,6 +40,13 @@
     <a href="#" class="btn btn-success show-success">Success</a>
     <a href="#" class="btn btn-info show-info">Info</a>
   </div>
+    <div class="well">
+        <span>For Named Flash Message: </span>
+        <a href="#" class="btn btn-warning named-show-alert">Alert</a>
+        <a href="#" class="btn btn-danger named-show-error">Error</a>
+        <a href="#" class="btn btn-success named-show-success">Success</a>
+        <a href="#" class="btn btn-info named-show-info">Info</a>
+    </div>
   <div class="well"><h3>Scroll down</h3></div>
   <div class="well"><h4>more...</h4></div>
   <div class="well"><h5>more...</h5></div>
