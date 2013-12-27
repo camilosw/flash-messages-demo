@@ -1,5 +1,5 @@
 /* CSS declarations go here */
-/* exaggerated transition to 2s for demo, feel free to tighten it up */
+/* exaggerated transition to 1s for demo, feel free to tighten it up */
 .fade {
     opacity: 0;
     -webkit-transition: all 1s linear;
