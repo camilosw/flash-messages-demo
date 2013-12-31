@@ -1,8 +1,6 @@
 {
   "packages": {
-    "flash-messages": {
-      "git": "https://github.com/camilosw/flash-messages.git",
-      "branch": "develop"
-    }
+    "bootstrap-3": {},
+    "flash-messages-plus": {}
   }
 }
