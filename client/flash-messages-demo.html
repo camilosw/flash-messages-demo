@@ -6,7 +6,8 @@
   <div class="container">
     {{> header}}
       {{> flashMessages}}
-      <h4> below here is the 'named' flash message</h4>
+    <h4> above here is the default flash message</h4>
+    <h4> below here is a 'named' flash message</h4>
       {{> flashMessages myFlashIdHelper}}
     {{> main}}
   </div>
@@ -35,14 +36,14 @@
     <a href="#" class="btn btn-primary clear-messages">Clear messages</a>
   </div>
   <div class="well">
-    <a href="#" class="btn btn-warning show-alert">Alert</a>
+    <a href="#" class="btn btn-warning show-warning">Warning</a>
     <a href="#" class="btn btn-danger show-error">Error</a>
     <a href="#" class="btn btn-success show-success">Success</a>
     <a href="#" class="btn btn-info show-info">Info</a>
   </div>
     <div class="well">
         <span>For Named Flash Message: </span>
-        <a href="#" class="btn btn-warning named-show-alert">Alert</a>
+        <a href="#" class="btn btn-warning named-show-warning">Warning</a>
         <a href="#" class="btn btn-danger named-show-error">Error</a>
         <a href="#" class="btn btn-success named-show-success">Success</a>
         <a href="#" class="btn btn-info named-show-info">Info</a>

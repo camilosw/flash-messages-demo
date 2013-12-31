@@ -19,9 +19,9 @@ Template.main.events({
       e.preventDefault();
       FlashMessages.clear();
     },
-    'click a.show-alert' : function (e, tmpl) {
+    'click a.show-warning' : function (e, tmpl) {
       e.preventDefault();
-      FlashMessages.sendAlert("You could be in trouble.");
+      FlashMessages.sendWarning("You could be in trouble.");
     },
     'click a.show-error' : function (e, tmpl) {
       e.preventDefault();
@@ -36,9 +36,9 @@ Template.main.events({
       FlashMessages.sendInfo("It's ok. Nothing important happening.");
     },
     // named...
-    'click a.named-show-alert' : function (e, tmpl) {
+    'click a.named-show-warning' : function (e, tmpl) {
         e.preventDefault();
-        FlashMessages.sendAlert("You could be in trouble.", {id: 'myFlashId'});
+        FlashMessages.sendWarning("You could be in trouble.", {id: 'myFlashId'});
     },
     'click a.named-show-error' : function (e, tmpl) {
         e.preventDefault();
@@ -55,6 +55,6 @@ Template.main.events({
     // end named...
     'click a.show-message-scroll' : function (e, tmpl) {
       e.preventDefault();
-      FlashMessages.sendAlert("I'm here!");
+      FlashMessages.sendWarning("I'm here!");
     }
   });

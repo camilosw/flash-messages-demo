@@ -1,6 +1,6 @@
 {
   "packages": {
     "bootstrap-3": {},
-    "flash-messages": { "path": "/Users/tony/git/flash-messages"}
+    "flash-messages-plus": {}
   }
 }
