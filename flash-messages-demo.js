@@ -12,13 +12,21 @@ if (Meteor.isClient) {
       e.preventDefault();
       FlashMessages.sendInfo("I'm a fast message!!!", { hideDelay: 1000 });
     },
+    'click a.messages-group' : function (e, tmpl) {
+      e.preventDefault();
+      FlashMessages.sendInfo(["I'm a message", "I'm also a message", "I'm a message too"]);
+    },
+    'click a.html-message' : function (e, tmpl) {
+      e.preventDefault();
+      FlashMessages.sendInfo("<strong>You're lucky!</strong>. The package you need is <a href='https://github.com/camilosw/flash-messages'>flash messages</a>");
+    },
     'click a.clear-messages' : function (e, tmpl) {
       e.preventDefault();
       FlashMessages.clear();
     },
-    'click a.show-alert' : function (e, tmpl) {
+    'click a.show-warning' : function (e, tmpl) {
       e.preventDefault();
-      FlashMessages.sendAlert("You could be in trouble.");
+      FlashMessages.sendWarning("You could be in trouble.");
     },
     'click a.show-error' : function (e, tmpl) {
       e.preventDefault();
@@ -34,7 +42,7 @@ if (Meteor.isClient) {
     },
     'click a.show-message-scroll' : function (e, tmpl) {
       e.preventDefault();
-      FlashMessages.sendAlert("I'm here!");
+      FlashMessages.sendWarning("I'm here!");
     }
   });
 }

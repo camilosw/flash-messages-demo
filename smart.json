@@ -1,8 +1,7 @@
 {
   "packages": {
     "flash-messages": {
-      "git": "https://github.com/camilosw/flash-messages.git",
-      "branch": "develop"
+      "path": "/Users/camilo/Documents/Pruebas/Meteor/flash-messages/packages/flash-messages"
     }
   }
 }
